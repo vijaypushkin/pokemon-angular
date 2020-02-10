@@ -8,7 +8,7 @@ import { Pokemon } from '../models/pokemon';
   providedIn: 'root'
 })
 export class PokemonService {
-  private url = 'http://pokeapi.salestock.net/api/v2';
+  private url = 'https://pokeapi.co/api/v2';
   private pokemonUrl = `${this.url}/pokemon`;
 
   constructor(private http: HttpClient) {}
