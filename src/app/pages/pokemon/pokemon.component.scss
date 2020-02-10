@@ -1,0 +1,36 @@
+.root {
+  max-width: 1200px;
+  margin: 30px auto;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  padding: 0 30px;
+
+  .title {
+    display: inline-block;
+    margin-bottom: 3px;
+    color: #00acc1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+  .sectionTitle {
+    margin-top: 30px;
+    font-size: 1.4em;
+    color: #00acc1;
+  }
+
+  .gridBody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1110px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+}

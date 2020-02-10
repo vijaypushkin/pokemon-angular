@@ -1,1 +1,29 @@
-<p>pokemon works!</p>
+<div class="root">
+  <div *ngIf="!pokemon; else loadedDiv">
+    Loading..
+  </div>
+
+  <ng-template #loadedDiv>
+    <div class="title">{{ pokemon.name }}</div>
+
+    <div>Order: {{ pokemon.order }}</div>
+    <div>Weight: {{ pokemon.weight }}</div>
+    <div>
+      Type: <span *ngFor="let type of pokemon.types"> {{ type.type.name }},&nbsp; </span>
+    </div>
+
+    <div class="sectionTitle">Images</div>
+    <div class="gridBody">
+      <div *ngFor="let image of getImages()">
+        <img class="image" [src]="image.url" />
+      </div>
+    </div>
+
+    <div class="sectionTitle">Moves</div>
+    <div class="gridBody">
+      <div *ngFor="let move of getMoves()">
+        <div class="moveItem">{{ move }}</div>
+      </div>
+    </div>
+  </ng-template>
+</div>
