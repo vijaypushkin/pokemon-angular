@@ -1,0 +1,38 @@
+.root {
+  max-width: 920px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 40px;
+
+  .title {
+    font-size: 2.4em;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px;
+  }
+
+  .imagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1110px;
+  }
+
+  .imageContainer {
+    margin: auto;
+  }
+
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .angularLogo {
+    width: 240px;
+    height: 240px;
+    margin-top: -20px;
+  }
+}

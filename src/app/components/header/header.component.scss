@@ -5,10 +5,16 @@
   padding: 5px;
   background-color: $primary-color;
   color: white;
+  height: 48px;
 
   .logo {
     display: flex;
     flex-grow: 1;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin: auto 15px;
+    text-decoration: none;
+    color: white;
   }
 
   .navigation {
