@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  padding: 5px;
+  background-color: #1e2129;
+  color: white;
+
+  .logo {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .links {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin: auto 5px;
+  }
+}
