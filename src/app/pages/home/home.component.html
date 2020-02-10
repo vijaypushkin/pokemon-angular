@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="widgetContainer">
+  <div class="title">Pokemon List</div>
+
+  <div class="body" *ngIf="pokemonList">
+    <a routerLink="pokemon/{{pokemon.name}}" routerLinkActive="router-link-active"  class="items" *ngFor="let pokemon of pokemonList.results">
+      {{ pokemon.name }}
+    </a>
+  </div>
+</div>

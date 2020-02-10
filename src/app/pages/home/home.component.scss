@@ -1,0 +1,39 @@
+.widgetContainer {
+  max-width: 1200px;
+  margin: 20px auto;
+
+  .title {
+    display: inline-block;
+    margin-bottom: 3px;
+    color: #00acc1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+
+  .items {
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 300ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

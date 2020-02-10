@@ -1,7 +1,9 @@
+@import '../../../assets/scss/variables.scss';
+
 .header {
   display: flex;
   padding: 5px;
-  background-color: #1e2129;
+  background-color: $primary-color;
   color: white;
 
   .logo {
